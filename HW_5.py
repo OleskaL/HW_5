@@ -222,7 +222,6 @@ class Person:
 person_1 = Person()
 
 setattr(person_1, 'age', '77')
-# print(getattr(person_1, 'name', 'age'))
 
 print(f'{person_1.name} is {person_1.age}.')
 

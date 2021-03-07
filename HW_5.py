@@ -242,9 +242,9 @@ class Student:
 
 student_1 = Student(1, "Kiki")
 email = "student@gmail.com"
-setattr(student_1, "email", "student@gmail.com")
+setattr(student_1, "student_email", "student@gmail.com")
 print(email)
-print(getattr(student_1, "email"))
+print(getattr(student_1, "student_email"))
 
 
 #11*.

@@ -43,10 +43,13 @@ class GuitarString:
     """
     def __init__(self, string_length):
         self.string_length = string_length
+        
+    def __str__(self):
+      return f'{self.string_length}'
 
 
 string = GuitarString(4)
-guitar = Guitar("Lennon", string.string_length)
+guitar = Guitar("Lennon", string)
 
 print(f'{guitar.name}, {guitar.string}')
 

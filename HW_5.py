@@ -124,7 +124,7 @@ class Concert:
     max_visitors_num = 22
 
     def __init__(self, visitors_count=0):
-        self._visitors_count = visitors_count
+        self.visitors_count = visitors_count
 
     @property
     def visitors_count(self):
@@ -138,7 +138,7 @@ class Concert:
             self._visitors_count = self.max_visitors_num
 
 
-Concert.max_visitor_num = 50
+Concert.max_visitors_num = 50
 concert = Concert(50)
 concert.visitors_count = 1000
 print(concert.visitors_count)

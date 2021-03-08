@@ -200,8 +200,8 @@ class AddressBook:
         self.age = age
 
     def __str__(self):
-        return f'{AddressBook}, {self.key}, {self.name}, {self.phone_number}, {self.address}, ' \
-               f'{self.email}, {self.birthday}, {self.age}'
+        return f"{__class__.__name__}(key={self.key}, name={self.name}, phone_number={self.phone_number}, " \
+               f"address={self.address}, email={self.email}, birthday={self.birthday}, age={self.age})"
 
 
 contact_2 = AddressBook(key=1, name='Pedro', phone_number='1717171', address='Tokyo',
@@ -242,7 +242,9 @@ class Student:
 
 student_1 = Student(1, "Kiki")
 setattr(student_1, "email", "student@gmail.com")
+student_email = student_1.email
 print(getattr(student_1, "email"))
+print(student_email)
 
 
 #11*.
